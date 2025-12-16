@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_history"
+        android:title="히스토리 보기"
+        android:icon="@android:drawable/ic_menu_recent_history"
+        android:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_about"
+        android:title="앱 정보"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:showAsAction="never" />
+</menu>

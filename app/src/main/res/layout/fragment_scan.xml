@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F0FA">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CromaScan"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="72dp" />
+
+    <TextView
+        android:id="@+id/text_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이미지를 선택해서 색상 팔레트를 만들어 보세요"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        app:layout_constraintTop_toBottomOf="@id/text_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/button_open_camera"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="카메라로 촬영하기"
+        android:textAllCaps="false"
+        android:backgroundTint="#6C4BD9"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/text_subtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="56dp" />
+
+    <Button
+        android:id="@+id/button_open_gallery"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="갤러리에서 선택하기"
+        android:textAllCaps="false"
+        android:backgroundTint="#E0D4FF"
+        android:textColor="#333333"
+        app:layout_constraintTop_toBottomOf="@id/button_open_camera"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/button_open_history"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="히스토리 보기"
+        android:textAllCaps="false"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#333333"
+        app:layout_constraintTop_toBottomOf="@id/button_open_gallery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

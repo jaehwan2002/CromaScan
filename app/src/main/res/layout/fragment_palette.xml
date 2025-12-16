@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F6EDF8">
+
+    <ProgressBar
+        android:id="@+id/progress_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/image_preview"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:background="#CCCCCC" />
+
+    <!-- K 값 선택 버튼 영역 -->
+    <LinearLayout
+        android:id="@+id/k_selector_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+
+        <Button
+            android:id="@+id/button_k3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="3색"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#6C4BD9" />
+
+        <Button
+            android:id="@+id/button_k5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="5색"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#B39DDB" />
+
+        <Button
+            android:id="@+id/button_k8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="8색"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#B39DDB" />
+    </LinearLayout>
+
+    <!-- 자동 추천 팔레트 타이틀 + 닫기 버튼 -->
+    <LinearLayout
+        android:id="@+id/recommend_title_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/text_recommend_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="자동 추천 팔레트"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#333333" />
+
+        <Button
+            android:id="@+id/button_close_recommend"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="✕"
+            android:textSize="16sp"
+            android:backgroundTint="#E0D2F8"
+            android:textColor="#333333" />
+    </LinearLayout>
+
+    <!-- 자동 추천 팔레트 영역 -->
+    <LinearLayout
+        android:id="@+id/recommend_palette_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:visibility="gone" />
+
+    <!-- 일반 K-means 팔레트 제목 -->
+    <TextView
+        android:id="@+id/text_palette_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="추출된 색상 팔레트"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginTop="16dp" />
+
+    <!-- 스크롤_팔레트 영역 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:id="@+id/color_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <!-- 매칭 보기 버튼 -->
+    <Button
+        android:id="@+id/button_go_match"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="매칭 보기"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#6C4BD9"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/button_toggle_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="추천 팔레트 보기"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#6C4BD9"
+        android:layout_marginTop="12dp" />
+
+
+</LinearLayout>

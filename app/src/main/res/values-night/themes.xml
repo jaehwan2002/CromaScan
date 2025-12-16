@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.CromaScan" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#6C4BD9</item>
+        <item name="colorPrimaryVariant">#563BAC</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <item name="android:statusBarColor">#6C4BD9</item>
+    </style>
+
+    <!-- Splash 전용 테마 -->
+    <style name="Theme.CromaScan.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#4F3A78</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_image</item>
+        <item name="postSplashScreenTheme">@style/Theme.CromaScan</item>
+    </style>
+</resources>
